@@ -1,0 +1,4 @@
+-- wooo I got it
+d1 $ every 7 (striate 32) $ every 3 (slow 2) $ sound (samples "bd(3,5) sn" (run 5)) # shape (rand)
+
+hush
