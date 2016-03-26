@@ -17,6 +17,6 @@ d2 $ silence
 
 hush
 
-d1 $ slow 2 $ every 3 (jux (iter 8)) $ sound (samples "[[[bd(3,5), jungbass(3,5) sn]]*2, hc*16?, bubble*12?]" (run 7)) # speed (rand)
+d1 $ slow 2 $ every 3 (jux (iter 8)) $ sound (samples "[[[bd(3,5), jungbass(3,5) sn]]*2, hc*16?, breath*12?]" (run 7)) # speed (rand)
 
 -- DRJ

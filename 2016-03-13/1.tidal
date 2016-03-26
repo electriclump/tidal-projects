@@ -1,4 +1,4 @@
--- wooo
+-- wooo 
 t1 (anticipateIn 16) $ every 7 (striate 32) $ every 3 (slow 2) $ every 5 ((0.25 <~) . rev) $ brak $ sound (samples "{bd(3,5) sn, flick/5, jungbass(4, 7) cp, printshort/6}" (run 5)) # shape (rand)
 
 t1 (anticipateIn 16) $ every 7 (striate 16) $ every 3 (slow 2) $ every 5 ((0.25 <~) . rev) $ brak $ sound (samples "{bd(3,5) sn, tabla/3, jungbass(4, 7) cp, hc(3,17)}" (run 5)) # shape (rand) # cutoff (saw1) # resonance (saw)
@@ -9,7 +9,7 @@ d1 $ spread' striate "[4 2 3 8]/3?" $ whenmod 4 2 (jux (rev)) $ sound (samples "
 
 d2 $ sound (samples "diphone(11,16)?" (run 5)) # speed  (run 16 ) # delay (run 3)
 
-t2 (anticipateIn 16)  $ every 3 (jux (rev)) $ sound (samples "diphone(12,16)*3?" (run 5)) # delay (run 9) |+| speed (slow 8 $ (+1) <$> tri1)
+t2 (anticipateIn 16)  $ every 3 (jux (rev)) $ sound (samples "diphone(12,16)*3?" (run 5)) # delay (run 9) |+| speed (slow 8 $ (+1) <$> tri1)  
 
 cps(70/120)
 
@@ -18,5 +18,4 @@ d2 $ silence
 hush
 
 d1 $ slow 2 $ every 3 (jux (iter 8)) $ sound (samples "[[[bd(3,5), jungbass(3,5) sn]]*2, hc*16?, bubble*12?]" (run 7)) # speed (rand)
-
 -- DRJ
