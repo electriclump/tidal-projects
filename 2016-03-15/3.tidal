@@ -1,0 +1,14 @@
+
+-- handy shortcuts
+let msil = mapM_ ($ silence)
+let sn = sound "[~ sn:1]/2"
+
+let bass'params a b = (|=| gain "0.7").
+                  (|=| hcutoff a).
+                  (|=| hresonance b)
+
+let bass' c b = rev . chop c $ striate b $ bass'params (slow 8 sine1) (slow 3 sine1) $ sound "[dubb dubb:1]/8"
+
+d1 $ overlay (sound "[bd*6 sn(3,4)]/2") $ stack [spin 6 $ spread' (density) "3 4 1 2" $ bass' 4 4]
+
+hush

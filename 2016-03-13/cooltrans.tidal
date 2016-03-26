@@ -1,0 +1,13 @@
+-- wooo I got it
+d1 $ every 7 (striate 32) $ every 3 (slow 2) $ every 5 ((0.25 <~) . rev) $ brak $ sound (samples "{bd(3,5) sn, flick/5, jungbass(4, 7) cp, printshort/6}" (run 5)) # shape (rand)
+
+
+d1 $ every 7 (striate 16) $ every 3 (slow 2) $ every 5 ((0.25 <~) . rev) $ brak $ sound (samples "{bd(3,5) sn, tabla/3, jungbass(4, 7) cp, hc(3,17)}" (run 5)) # shape (rand) # cutoff (saw1) # resonance (saw)
+
+t1 (transitionIn 16) spread' striate "[4 2 3 8]/3" $ whenmod 4 2 (jux (rev)) $ sound (samples "{bd(3,5) sn, tabla/3, jungbass(4, 7) cp, mouth/6}" (run 5)) # shape (rand)
+
+d2 $ sound (samples "diphone(12,16)*3?" (run 5)) # speed (run 16 )
+
+
+cps(80/120)
+hush
